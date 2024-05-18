@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Alban_DANET_truthguard</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Alban DANET</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="ageperf_ffrs.html" >Age-Perf Skate</a></li>
+						<li><a href="falcon.html">Falc'on</a></li>
+						<li><a href="truthguard.html" class="active">truthguard</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+				<section id="main" class="wrapper">
+					<div class="inner">
+						<h1 class="major">Truth Guard: Advanced Machine Learning for Fact-Checking</h1>
+						<span class="image fit"><img src="images/fake_news_ban.jpg" alt="Advanced Analysis of Fake News Detection" /></span>
+						<p>Truth Guard represents a paradigm shift in online information verification, utilizing advanced machine learning techniques to combat the proliferation of misinformation. As a core member of the development team, my primary responsibility was to architect and refine the machine learning models that are central to the platform's functionality.</p>
+						<p>The project's challenge was to develop a system capable of distinguishing between legitimate news and fake news with high reliability and in real time. This required a nuanced understanding of both natural language processing (NLP) and machine learning (ML) frameworks. To address this, we implemented a multi-model approach that integrates several machine learning strategies to optimize accuracy and processing speed.</p>
+						
+						<h2>Detailed Technical Overview</h2>
+						<p>My focus was on developing and tuning a Logistic Regression model, chosen for its efficiency and interpretability, which are crucial for the real-time application needs of Truth Guard. Logistic Regression works well for binary classification problems, making it ideal for our use case where an article must be classified as either 'true' or 'fake'.</p>
+						<p>Using Python's scikit-learn library, I engineered feature extraction processes that transform text data into a format suitable for machine learning models. This involved utilizing the TfidfVectorizer, which converts text documents into a matrix of TF-IDF features. I meticulously optimized the model's hyperparameters through cross-validation techniques to enhance its predictive performance.</p>
+						<p>Beyond Logistic Regression, I explored the use of Naive Bayes for its probabilistic approach to classification. This model calculates the probability of each class (fake or real news) based on the presence of particular words in the text, which can be extremely effective given the right dataset. Meanwhile, the use of Recurrent Neural Networks (RNNs), including LSTM (Long Short-Term Memory) models, allowed for deeper text analysis, capturing long-term dependencies in text data which are often crucial for understanding the full context of news articles.</p>
+						
+						<h2>Implementation and Challenges</h2>
+						<p>The implementation phase involved extensive data preprocessing to ensure that our models received high-quality input data. This preprocessing included tokenization, removal of stopwords, and lemmatization to reduce words to their base forms. The real challenge was to design a system that not only performs well on historical data but also adapts to new, unseen data, maintaining high accuracy in a rapidly evolving news landscape.</p>
+						<p>Another significant aspect of my role was to integrate these models into the existing web infrastructure, ensuring seamless interaction between the front-end user interface and the back-end ML models. This was achieved by developing a robust API using Flask, which handles requests to the ML models and returns predictions to the user interface.</p>
+						
+						<h2>Impact and Future Directions</h2>
+						<p>The integration of these machine learning models into the Truth Guard platform has dramatically enhanced its capability to identify and flag fake news accurately. Going forward, the plan is to incorporate real-time learning mechanisms that allow the models to continually learn from new data, thus improving their accuracy over time without human intervention.</p>
+						<p>In conclusion, my contribution to the Truth Guard project has been focused on leveraging cutting-edge ML technologies to build a reliable and scalable solution for real-time news verification. This work not only highlights the potential of AI in societal applications but also sets a benchmark for future developments in the field of automated fact-checking.</p>
+					</div>
+				</section>
+				
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Alban Danet. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
