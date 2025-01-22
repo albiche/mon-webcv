@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Alban_DANET_data</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Alban DANET</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="meteoalert.html" class="active">Meteo Alert Api</a></li>
+						<li><a href="ageperf_ffrs.html">Age-Perf Skate</a></li>
+						<li><a href="falcon.html">Falc'on</a></li>
+						<li><a href="truthguard.html">Truthguard</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+				<section id="main" class="wrapper">
+					<div class="inner">
+						<h1 class="major">Meteo Alert Api - Improving Fishermen's Safety</h1>
+						<p><strong>Meteo Alert</strong> is a project I developed as part of a mandatory one-month international experience in Madagascar. It was designed to enhance safety for local fishermen by providing daily weather alerts and weekly forecasts, tailored to their specific needs and the realities of their environment. Unlike generic systems, this project took into account the unique challenges and conditions faced by the community.</p>
+						
+						<span class="image fit"><img src="images/majunga_peche.jpg" alt="Advanced Analysis of Fake News Detection" /></span>
+
+						<h2>Understanding the Local Context</h2>
+						<p>Before diving into the technical side, I spent time collaborating with fishermen and the Lakana Tsara association to define what "risk" means for them. Unlike European standards, the criteria were based on practical concerns such as wind direction, wave height, and the specific vulnerabilities of traditional Malagasy fishing boats. This collaboration ensured the system was both practical and relevant.</p>
+
+						<h2>Automated Data Collection and Risk Analysis</h2>
+						<p>To provide accurate and reliable forecasts, the system integrates with the <strong>Storm Glass API</strong>. Every day, it retrieves detailed weather data—wind speed, wave height, current speed, and direction—across multiple strategic points near the fishing areas. This data is processed using a custom algorithm I designed to classify risks into:</p>
+						<ul>
+							<li><strong>Color flags:</strong> Green, yellow, or red, based on wind speed thresholds.</li>
+							<li><strong>Black or black/white flags:</strong> Indicating high-risk situations due to strong offshore winds.</li>
+						</ul>
+						<p>The system automatically generates a CSV file for analysis, ensuring a smooth and efficient process for daily operations.</p>
+
+						<h2>Communicating with Fishermen</h2>
+						<p>The next step was ensuring this information reached the fishermen in a timely and clear manner. Using the <strong>Orange SMS API Madagascar 2.0</strong>, the system sends:</p>
+						<ul>
+							<li><strong>Weekly summaries:</strong> Every Sunday, fishermen receive a concise forecast for the week ahead.</li>
+							<li><strong>Urgent alerts:</strong> In cases of red or black flags for the next day, immediate warnings are sent to help them prepare or stay onshore.</li>
+						</ul>
+						<p>The SMS messages are tailored to be concise and easy to understand, ensuring accessibility for all recipients.</p>
+						
+						<img src="images/sms_exemple.jpg" alt="Advanced Analysis of Fake News Detection" width="300" />
+
+
+						<h2>User-Friendly Web Interface</h2>
+						<p>To make the system easy to manage, I developed a simple yet secure web interface. Key features include:</p>
+						<ul>
+							<li><strong>Login security:</strong> Only authorized administrators can access the platform.</li>
+							<li><strong>Contact management:</strong> Adding or removing fishermen’s phone numbers is straightforward and intuitive.</li>
+							<li><strong>Automation:</strong> Once set up, the system runs independently, requiring minimal intervention apart from recharging the SMS API credits.</li>
+						</ul>
+						<p>The platform is hosted on <strong>Heroku</strong>, ensuring continuous availability and a hassle-free deployment process.</p>
+
+						<h2>Technical Achievements</h2>
+						<p>Every aspect of this project—from API integration to algorithm development—was handled independently. Highlights include:</p>
+						<ul>
+							<li>Designing a robust algorithm to classify risks based on real-time weather data.</li>
+							<li>Implementing seamless API communication for data retrieval and SMS delivery.</li>
+							<li>Developing an intuitive and scalable web interface for the Lakana Tsara team.</li>
+						</ul>
+						<p>Despite working within the constraints of a one-month timeline, the project delivers a fully functional and sustainable solution that addresses a critical safety issue.</p>
+
+						<h2>Flexibility and Scalability</h2>
+						<p>While the system currently sends weekly forecasts, it can easily be adjusted to provide more frequent updates during high-risk periods, such as bi-daily reports. The architecture is flexible enough to accommodate additional features or expand to other regions.</p>
+
+						<h2>Conclusion</h2>
+						<p>Meteo Alert demonstrates how technology can be effectively tailored to meet local needs, blending advanced data processing with practical on-the-ground solutions. This project has not only improved safety for fishermen but has also empowered the Lakana Tsara association with a tool they can rely on for years to come.</p>
+						<p>For any questions or collaboration opportunities, feel free to contact me at <a href="mailto:alban.danet@efrei.net">alban.danet@efrei.net</a>.</p>
+					</div>
+				</section>
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Alban Danet. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
